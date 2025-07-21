@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# 打印换行符 防止某些情况导致的输出显示问题
+echo -e "\n"
+
 # 系统类型检测
 if [ -f "/etc/os-release" ]; then
     if grep -q "ID=alpine" /etc/os-release; then
