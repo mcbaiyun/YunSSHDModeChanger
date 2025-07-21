@@ -210,7 +210,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PermitRootLogin' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PermitRootLogin 被注释，将取消注释并设置为yes"
                 sudo sed -i 's/^#\s*PermitRootLogin.*/PermitRootLogin yes # 允许证书和密码登录/' /etc/ssh/sshd_config
             else
@@ -230,7 +230,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PasswordAuthentication' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PasswordAuthentication 被注释，将取消注释并设置为yes"
                 sudo sed -i 's/^#\s*PasswordAuthentication.*/PasswordAuthentication yes # 允许密码登录/' /etc/ssh/sshd_config
             else
@@ -327,7 +327,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PermitRootLogin' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PermitRootLogin 被注释，将取消注释并设置为yes"
                 sudo sed -i 's/^#\s*PermitRootLogin.*/PermitRootLogin yes # 允许密码登录/' /etc/ssh/sshd_config
             else
@@ -347,7 +347,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PasswordAuthentication' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PasswordAuthentication 被注释，将取消注释并设置为yes"
                 sudo sed -i 's/^#\s*PasswordAuthentication.*/PasswordAuthentication yes # 允许密码登录/' /etc/ssh/sshd_config
             else
@@ -367,7 +367,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PubkeyAuthentication' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PubkeyAuthentication 被注释，将取消注释并设置为no"
                 sudo sed -i 's/^#\s*PubkeyAuthentication.*/PubkeyAuthentication no # 不允许证书登录/' /etc/ssh/sshd_config
             else
@@ -437,7 +437,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PermitRootLogin' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PermitRootLogin 被注释，将取消注释并设置为prohibit-password"
                 sudo sed -i 's/^#\s*PermitRootLogin.*/PermitRootLogin prohibit-password # 不允许密码登录/' /etc/ssh/sshd_config
             else
@@ -457,7 +457,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PubkeyAuthentication' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PubkeyAuthentication 被注释，将取消注释并设置为yes"
                 sudo sed -i 's/^#\s*PubkeyAuthentication.*/PubkeyAuthentication yes # 允许证书登录/' /etc/ssh/sshd_config
             else
@@ -487,7 +487,7 @@ while true; do
             current_config=$(grep -E '^[[:space:]]*#?PasswordAuthentication' /etc/ssh/sshd_config)
             
             # 处理不同配置情况
-            if [[ $current_config == \#* ]]; then
+            if echo "$current_config" | grep -q '^#'; then
                 echo -e "PasswordAuthentication 被注释，将取消注释并设置为no"
                 sudo sed -i 's/^#\s*PasswordAuthentication.*/PasswordAuthentication no # 不允许密码登录/' /etc/ssh/sshd_config
             else
