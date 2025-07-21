@@ -2,8 +2,9 @@
 本脚本用于Alpine、Debain等系统的SSHD认证方式的辅助配置，可以检查并切换SSHD的认证方式，但你需要自己生成证书
 ## 菜单选项
 ```text
- [YunSSHDModeChanger] 主菜单：
-
+-------------------------------
+  [YunSSHDModeChanger] 主菜单
+------------------------------
   1. 创建~/.ssh目录并设置权限700
   2. 检查SSH文件权限
   3. 检查sshd_config配置
