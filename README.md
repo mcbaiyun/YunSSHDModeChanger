@@ -17,38 +17,38 @@
 ### Github 直连
 只使用一次(curl与wget二选一)
 ```shell
-bash <(curl https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
+sh <(curl https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
 ```
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
+sh <(wget -q -O - https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
 ```
 保存并执行(curl与wget二选一)
 ```shell
-curl -O https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && bash YunSSHDModeChanger.sh
+curl -O https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && sh YunSSHDModeChanger.sh
 ```
 ```shell
-wget https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && bash YunSSHDModeChanger.sh
+wget https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && sh YunSSHDModeChanger.sh
 ```
 > 后续执行直接使用
 ```shell
-bash YunSSHDModeChanger.sh
+sh YunSSHDModeChanger.sh
 ```
 ### ghproxy.net 镜像
 只使用一次(curl与wget二选一)
 ```shell
-bash <(curl https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
+sh <(curl https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
 ```
 ```shell
-bash <(wget -O - https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
+sh <(wget -q -O - https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh)
 ```
 保存并执行(curl与wget二选一)
 ```shell
-curl -O https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && bash YunSSHDModeChanger.sh
+curl -O https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && sh YunSSHDModeChanger.sh
 ```
 ```shell
-wget https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && bash YunSSHDModeChanger.sh
+wget https://ghproxy.net/https://raw.githubusercontent.com/mcbaiyun/YunSSHDModeChanger/refs/heads/main/YunSSHDModeChanger.sh && sh YunSSHDModeChanger.sh
 ```
 > 后续执行直接使用
 ```shell
-bash YunSSHDModeChanger.sh
+sh YunSSHDModeChanger.sh
 ```
