@@ -1,0 +1,2 @@
+# YunSSHDModeChanger
+本脚本用于Alpine、Debain等系统的SSHD认证方式的辅助配置，可以检查并切换SSHD的认证方式，但你需要自己生成证书
